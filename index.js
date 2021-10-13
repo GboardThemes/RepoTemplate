@@ -44,16 +44,17 @@ async function run() {
                 const tmp = metaFile.getData().toString()
                 tmp.split(new RegExp('(\r\n|\n)')).forEach(metaEntry => {
                     if (metaEntry.includes('=')) {
-                        meta[metaEntry.split('=')[0]] = metaEntry.includes(',') ? metaEntry.split('=')[1].split(',') : metaEntry.split('=')[1]
+                        meta[metaEntry.split('=')[0]] = (metaEntry.includes(',') || metaEntry.startsWith("tags")) ? metaEntry.split('=')[1].split(',') : metaEntry.split('=')[1]
                     }
                 })
             } else {
                 meta.name = pack.replace('_', ' ').replace(new RegExp('\.(zip|pack)'), '')
             }
             list.push(meta)
-			console.log(`${meta.name} by ${meta.author} added.`)
+            console.log(`${meta.name} by ${meta.author} added.`)
         }
         fs.writeFileSync('list.json', JSON.stringify(list, null, 2))
     }
 }
+
 run().then(() => console.log('Done.'))
