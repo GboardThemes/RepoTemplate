@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "url": "https://github.com/GboardThemes/RepoTemplate/raw/main/packs/Rthemes.zip",
+    "author": "RKBDI",
+    "tags": [
+      "Unique",
+      "RKBDI",
+      "Fixed"
+    ],
+    "themes": [
+      "000",
+      "3d",
+      "3damber",
+      "3dpink",
+      "3dpurple",
+      "FF0",
+      "fusia",
+      "holo",
+      "ICS",
+      "lumiq",
+      "material",
+      "MD2",
+      "MD2AMOLED",
+      "MD2AMOLEDgreen",
+      "MD2AMOLEDred",
+      "MD2green",
+      "mint-ydark",
+      "mint-ylight",
+      "ninjapro",
+      "OREO",
+      "osx",
+      "pewdiepie",
+      "Sammi",
+      "Solarized-dark",
+      "Solarized",
+      "synthwave",
+      "synthwave2",
+      "synthwavewhite",
+      "twrp",
+      "twrppink",
+      "ubuntu",
+      "veu",
+      "veulight",
+      "win95",
+      "Windows",
+      "Xbox",
+      "xda"
+    ],
+    "size": 3346106,
+    "name": "Rthemes"
+  }
+]
